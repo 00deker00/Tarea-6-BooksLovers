@@ -1,0 +1,36 @@
+
+@keyframes moveLogo {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes enlargeLogo {
+	0% {
+
+		transform: rotate(0deg);
+	}
+
+
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.logo-element {
+	animation: moveLogo 2s ease-in-out 3;
+
+}
+
+.logo-element:hover {
+	animation: enlargeLogo 0.5s forwards;
+	transform-origin: center;
+}                   
+

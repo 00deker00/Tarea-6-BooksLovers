@@ -1,0 +1,2179 @@
+:root {
+    --fondoUno: #ffffffea;
+    --fondoDos: #e0f7fa;
+    --textoUno: #433831;
+    --textoDos: #000000;
+    --elementosDestacados: #6e9d15;
+    --colorBotones: #A37D65;
+    --logo: #433831;
+    --fondoFooter: #433831;
+    --parrafoFooter: #ffffffea;
+    --destacar: #88ac27;
+    --sombra: rgba(0, 0, 0, 1);
+    --animacion: #f0f0f0;
+}
+
+#logo2 {
+    display: none;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fondoUno: #121212;
+        --fondoDos: #1E1E1E;
+        --textoUno: #E0E0E0;
+        --textoDos: #FFFFFF;
+        --elementosDestacados: #648112;
+        --colorBotones: #5C4733;
+        --logo: #433831;
+        --fondoFooter: #4d182e;
+        --parrafoFooter: #ffffffea;
+        --destacar: #88ac27;
+        --animacion: #333333;
+    }
+
+    #logo1 {
+        display: none;
+    }
+
+    #logo2 {
+        display: block;
+    }
+}
+
+
+main{background-color: var(--fondoUno);}
+
+body{
+    background-color: var(--fondoUno);
+}
+
+@font-face {
+  font-family: "Alegreya";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+
+  src: url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap")format("woff2");
+}
+
+/* Estilos para el botón cuando está enfocado */
+.btn-compra:focus {
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+    border: 2px solid #4CAF50; /* Añade un borde de 2px de color verde */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Añade un efecto de sombra */
+}
+
+
+
+
+
+@font-face {
+    .poppins-medium {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    src: url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")format("woff2");
+}
+
+
+
+
+    .pruebas {
+    /* Permite que el input crezca para ocupar el espacio disponible */
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px!important;
+    height: 40px!important;
+    background-color: var(--fondoDos)!important;
+    font-size: 16px!important;
+    
+}
+
+.anuncio {
+    max-width: 1280px; /* Establece el ancho máximo */
+    margin-top: 100px; /* Establece el margen superior */
+    width: 100%; /* Asegura que el div ocupe el 100% del contenedor si es menor a 1280px */
+    margin-left: auto; /* Centra el div horizontalmente */
+    margin-right: auto; /* Centra el div horizontalmente */
+}
+
+
+
+
+
+
+header{
+    
+
+.grid-container .item1 { 
+    grid-area: logo; 
+    background-color: var(--logo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*NUEVOS CAMBIOS PARA EL LOGO ANIMADO*/
+    width: 100%;
+    height: 100%;
+    min-width: 80px;
+    min-height: 40px;
+    padding: 5%;
+
+
+
+}
+
+/* Asegurar que la imagen ocupe todo el espacio de su casilla */
+/*LOGO ESTÁTICO*/
+.grid-container .item1 img {
+    
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 110px;
+    min-width: 80px;
+    min-height: 40px;
+    padding: 5%;
+}
+.item2 { grid-area: barra;}
+
+
+
+
+.grid-container .item3 { grid-area: idioma; }
+.grid-container .item4 { grid-area: compra; }
+.grid-container .item5 { grid-area: inicio; }
+.grid-container .item6 { grid-area: libros; }
+.grid-container .item7 { grid-area: contacto; }
+.grid-container .item8 { grid-area: flibro; }
+.grid-container .item9 { grid-area: redes; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo barra barra barra barra barra barra barra barra idioma compra compra'
+    'logo logo inicio inicio libros libros contacto contacto flibro flibro redes redes redes';
+  gap: 1px;
+  background-color: var(--fondoDos);
+  
+  
+}
+
+
+
+.grid-container {
+    .item4 img { filter: invert(100%); /* Cambia el color de los iconos a blanco */ 
+        width: 25px; /* Ajusta el tamaño de los iconos */ 
+        height: 25px; 
+        margin-right: 5px; /* Espacio entre el icono y el texto */ 
+    }
+
+    #boton-usuario {
+
+        justify-content: center;
+        align-items: center;
+        min-width: 64px;
+        min-height: 64px;
+        padding: 0; /* Remove any default padding */
+        overflow: hidden; /* Ensure the image stays within the button */
+    }
+    
+
+    
+
+}
+
+   
+
+
+.grid-container .item9 {
+    display: grid;
+    grid-template: 'twitter instagram facebook';
+    
+    
+
+    button{
+        #twitter {grid-area: twitter;}
+        #instagram {grid-area: instagram;}
+        #facebook {grid-area: facebook;}
+}
+
+}
+
+
+.grid-container .item5 button,
+.grid-container .item6 button,
+.grid-container .item7 button,
+.grid-container .item8 button,
+.grid-container .item9 button { 
+    background-color: var(--colorBotones); 
+    color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */ 
+    border: none; 
+    cursor: pointer; 
+    font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */ 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;  /* Asegura que el padding y border se incluyan en el tamaño total */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    &:hover{
+        background-color: var(--elementosDestacados);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    &:focus{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        
+    }
+    img {
+        width: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+        height: 24px;
+        margin: 0 5px; /* Espacio entre los iconos */
+        filter: invert(100%); /* Cambia el color de los iconos a blanco */
+        
+    }
+}
+.boton-inicio{display: block;}
+    .barra-alternativa{
+        display: none;
+    }
+
+
+/* Estilo específico para los botones Idioma y Compra */
+.grid-container .item3 button,
+.grid-container .item4 button {
+    background-color: var(--elementosDestacados);
+    color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */
+    height: 60px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    margin-top: 3px;;
+    font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */
+    padding: 15px 20px;
+    white-space: nowrap; /* Evita que el texto se quiebre en varias líneas */
+    transition: background-color 0.3s, border 0.3s;
+    &:hover{
+        background-color: var(--destacar);
+        
+    }
+    &:focus{
+        border: solid 3px black;
+        
+        
+    }
+}
+
+
+@media (max-width:770px) {
+    .pruebas {
+        padding: 1px!important;
+        width: 100%;
+        height: 40px!important;
+        border-radius: 20px!important;
+        background-color: var(--fondoDos)!important;
+        font-size: 16px!important;
+        box-sizing: border-box;
+    }
+
+    .boton-inicio {
+        display: block;
+    }
+
+   
+
+    .grid-container {
+        grid-template-areas:
+            'logo idioma compra'
+            'logo barra barra'            
+            'flibro flibro flibro'
+            'contacto contacto contacto'
+            'libros libros libros'
+            'inicio inicio inicio';
+        gap: 5px;
+        width: 100%;
+    }
+
+    .grid-container .item1 img {
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    .grid-container > div {
+        font-size: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item3 button,
+    .grid-container .item4 button {
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item1 { 
+        grid-area: logo; 
+        background-color: var(--logo);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Asegurar que la imagen ocupe todo el espacio de su casilla */
+    .grid-container .item1 img {
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+        max-height: 110px;
+        padding: 5%;
+    }
+    
+    .grid-container .item2 { 
+        grid-area: barra;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item3 { 
+        grid-area: idioma;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item4 { 
+        grid-area: compra;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item5 { 
+        grid-area: inicio;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item6 { 
+        grid-area: libros;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item7 { 
+        grid-area: contacto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item8 { 
+        grid-area: flibro;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item9 { 
+        grid-area: redes;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'twitter instagram facebook';
+        gap: 5px;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item9 button img {
+        width: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+        height: 24px;
+        filter: invert(100%); /* Cambia el color de los iconos a blanco */
+    }
+    
+    /* Estilo de botones generales */
+    .grid-container .item3 button,
+    .grid-container .item4 button,
+    .grid-container .item5 button,
+    .grid-container .item6 button,
+    .grid-container .item7 button,
+    .grid-container .item8 button,
+    .grid-container .item9 button { 
+        background-color: var(--colorBotones); 
+        color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */ 
+        border: none; 
+        cursor: pointer; 
+        font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */ 
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item3 button,
+    .grid-container .item4 button {
+        background-color: var(--elementosDestacados);
+        color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */
+        border: none;
+        border-radius: 30px; /* Bordes redondeados */
+        cursor: pointer;
+        font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */
+        padding: 15px 20px;
+        white-space: nowrap; /* Evita que el texto se quiebre en varias líneas */
+        box-sizing: border-box;
+    }
+
+    .grid-container .item6 button,
+    .grid-container .item7 button,
+    .grid-container .item8 button {display: block;}
+    .grid-container .item9{display: none}
+
+
+}
+
+
+
+/*ANIMACION CSS QUE AUMENTA LAS CASILLAS CUANDO SE POSA EL RATÓN*/
+.grid-container{
+    .item5, .item6, .item7, .item8{
+        transition: transform 0.3s, background-color 0.3s;
+        outline: none; /* Para eliminar el contorno predeterminado en el foco */
+    }
+    
+     .item5:hover, .item5:focus, .item6:hover, .item6:focus, .item7:hover, .item7:focus, .item8:hover, .item8:focus{
+        transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        cursor: pointer; /* Cambiar el cursor a una mano */
+    
+    
+    }
+}
+
+
+
+@media (max-width: 420px) {
+
+    .hero-text {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        bottom: 2%;
+        
+        
+        
+    
+        z-index: 2; /* Asegura que el texto esté sobre la imagen */
+    }
+
+
+
+    
+        .saber-mas-button {
+        padding: 5px;
+        font-size: 0.6em;
+    }
+    
+    
+    
+    
+    .hero-text h1 {
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    
+    .hero-text p {
+        display:none!important;
+        font-size: 0.7em;
+        line-height: 1.5;
+        color: white; /* Color del texto */
+    }
+
+
+
+
+
+
+
+
+    .pruebas {
+        padding: 1px!important;
+        width: 100%;
+        height: 40px!important;
+        border-radius: 20px!important;
+        background-color: var(--fondoDos)!important;
+        font-size: 16px!important;
+        box-sizing: border-box;
+    }
+
+    .boton-inicio {
+        display: none;
+    }
+
+    .barra-alternativa {
+        display: block;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            'logo idioma compra'
+            'logo barra barra'            
+            'flibro flibro flibro'
+            'contacto contacto contacto'
+            'libros libros libros'
+            'inicio inicio inicio';
+        gap: 5px;
+        width: 100%;
+    }
+
+    .grid-container .item1 img {
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    .grid-container > div {
+        font-size: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item3 button,
+    .grid-container .item4 button {
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item1 { 
+        grid-area: logo; 
+        background-color: var(--logo);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Asegurar que la imagen ocupe todo el espacio de su casilla */
+    .grid-container .item1 img {
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+        max-height: 110px;
+        padding: 5%;
+    }
+    
+    .grid-container .item2 { 
+        grid-area: barra;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item3 { 
+        grid-area: idioma;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item4 { 
+        grid-area: compra;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item5 { 
+        grid-area: inicio;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item6 { 
+        grid-area: libros;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item7 { 
+        grid-area: contacto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item8 { 
+        grid-area: flibro;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container .item9 { 
+        grid-area: redes;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'twitter instagram facebook';
+        gap: 5px;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item9 button img {
+        width: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+        height: 24px;
+        filter: invert(100%); /* Cambia el color de los iconos a blanco */
+    }
+    
+    /* Estilo de botones generales */
+    .grid-container .item3 button,
+    .grid-container .item4 button,
+    .grid-container .item5 button,
+    .grid-container .item6 button,
+    .grid-container .item7 button,
+    .grid-container .item8 button,
+    .grid-container .item9 button { 
+        background-color: var(--colorBotones); 
+        color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */ 
+        border: none; 
+        cursor: pointer; 
+        font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */ 
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .grid-container .item3 button,
+    .grid-container .item4 button {
+        background-color: var(--elementosDestacados);
+        color: var(--parrafoFooter); /* Cambia el color del texto a blanco para mejor contraste */
+        border: none;
+        border-radius: 30px; /* Bordes redondeados */
+        cursor: pointer;
+        font-size: 20px; /* Ajusta el tamaño de la fuente si es necesario */
+        padding: 15px 20px;
+        white-space: nowrap; /* Evita que el texto se quiebre en varias líneas */
+        box-sizing: border-box;
+    }
+
+    .grid-container .item6 button,
+    .grid-container .item7 button,
+    .grid-container .item8 button,
+    .grid-container .item9 button {
+        display: none;
+    }
+}
+
+
+
+
+
+}
+
+/* SECCIO HERO */
+
+
+@media (max-width: 770px) {
+    .hero-text h1{
+    margin-top: 2px;
+    margin-left: 2px;
+    
+}
+
+    .saber-mas-button {
+        padding: 5px 2px;
+        font-size: 0.6em;
+    }
+
+
+
+
+.hero-text h1 {
+    display: block;
+    font-size: 1.5rem!important;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.hero-text p {
+    font-size: 0.7rem!important;
+    line-height: 1.5;
+    color: white; /* Color del texto */
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.hero {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    bottom: 5%;
+    
+
+    z-index: 2; /* Asegura que el texto esté sobre la imagen */
+}
+
+.hero-text h1 {
+    grid-row-start: 2;
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-family: 'Alegreya';
+    color: var(--elementosDestacados);
+}
+
+.hero-text p {
+    grid-row-start: 3;
+    line-height: 1.5;
+    font-family: 'Alegreya';
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+
+
+
+
+.saber-mas-button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: var(--textoDos);
+    background-color: var(--elementosDestacados);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*AÑADIR TRANSICIÓN Y EL TIEMPO DE LA ANIMACIÓN*/
+    transition: background-color 0.1s ease;
+    animation: pulse 5s infinite; /* AÑADIR ANIMACIÓN PULSE */
+}
+
+/*ANIMACIÓN BOTÓN PULSE*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.10); /* Aumenta ligeramente el tamaño */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*EFECTO AL POSAR EL RATÓN SOBRE EL BOTÓN CAMBIA EL COLOR*/
+
+.saber-mas-button {
+    transition: background-color 0.3s; 
+}
+
+.saber-mas-button:hover {
+    background-color: var(--destacar);
+}
+
+
+
+
+
+
+* {
+    .landingPage {
+        p {
+            font-family: 'Alegreya';
+            font-size: 1em;
+            color: var(--textoDos);
+        }
+        h1 {
+            font-family: 'Alegreya';
+            font-size: 2.5em;
+            color: var(--textoDos);
+            text-align: center;
+        }
+        h2 {
+            font-family: 'Alegreya';
+            font-size: 1.5em;
+            color: var(--textoDos);
+        }
+    }
+}
+
+
+
+/*BARRA ANIMADA QUE CAMBIA DE COLOR*/
+@keyframes movimiento-barra {
+    0% { left: 0; background-color: rgb(0, 0, 0); opacity: 0.1; } 
+    30% { left: 30%; background-color: rgb(15, 58, 58); opacity: 0.5; } 
+    60% { left: 60%; background-color: yellow; opacity: 0.7; } 
+    75% { left: 75%; background-color: yellow; opacity: 1; } 
+    100% { left: 100%; background-color: yellow; opacity: 1; } 
+}
+
+  
+.barra-animada {
+    position: absolute; /*Hay que ponerlo para elegir la posición*/
+    bottom: 0; /*Y con este se elige la posición*/
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    animation: movimiento-barra 10s infinite linear;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for larger screens */
+.featured-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+/* Featured Books Section */
+.featured-books {
+    background-color: var(--fondoUno); /* Fondo blanco para la sección de libros destacados */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-books h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.featured-books .book-card {
+    display: inline-block;
+    width: 306px; /* Ajustar el ancho según especificado */
+    height: 706px; /* Ajustar la altura según especificado */
+    margin: 0 15px; /* Espacio entre las cajas */
+    background-color: var(--fondoDos);
+    padding: 20px;
+    margin-bottom: 30px;;
+    border-radius: 10px;
+    text-align: left; /* Alineación del texto */
+    vertical-align: top; /* Alineación vertical de las cajas */
+    box-shadow: 0 0 10px ;
+    box-shadow: 0 0 10px var(--sombra); /* Inicialmente, la sombra es negra */
+    
+    
+
+}
+
+/*ANIMACIÓN DE LOS BORDES DE LAS TARJETAS DESTACADAS BOOK-CARD*/
+
+.book-card{
+    animation: border-color-animation 10s infinite linear, box-shadow-animation 10s infinite linear;    /* Animación de 10 segundos y repetirlo infinitamente */
+
+}
+
+@keyframes border-color-animation {
+    0% { border-color: black; }
+    50% { border-color: var(--elementosDestacados); }
+    100% { border-color: black; }
+}
+
+@keyframes box-shadow-animation {
+    0% { box-shadow: 0 0 10px black; }
+    50% { box-shadow: 0 0 10px var(--elementosDestacados); }
+    100% { box-shadow: 0 0 10px black; }
+}
+
+
+
+
+
+
+
+
+
+/*ANIMACIONES CSS*/
+.book-card {
+    transition: transform 0.3s, background-color 0.3s;
+    outline: none; /* Para eliminar el contorno predeterminado en el foco */
+}
+
+
+.book-card:hover,
+.book-card:focus {
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+  background-color: var(--fondoUno); /* Cambiar ligeramente el color de fondo */
+  cursor: pointer; /* Cambiar el cursor a una mano */
+}
+
+
+
+/*ANIMACIONES INTERSECTIN OBSERVABLE API*/
+.book-card-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 0.6s ease-out;
+}
+
+.book-card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+.featured-books .book-image {
+    width: 270px;
+    height: 392px;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    margin: 0 auto 20px; /* Centra la imagen y añade espacio inferior */
+}
+
+.featured-books .book-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que la imagen se ajuste al contenedor */
+}
+
+.featured-books .book-text {
+    text-align: center; /* Alinea el texto */
+    
+}
+
+.featured-books .book-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    
+}
+
+.featured-books .book-text p {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Alegreya';
+    font-size: 20px;
+}
+
+
+
+/* Estilo específico para la sección Teatro y Poesía */
+.seccion-libros-dos {
+    background-color: var(--fondoDos);
+    padding: 50px;
+    text-align: center;
+    
+    
+
+}
+
+/* Estilo específico para la sección Novela y Ficción */
+.seccion-libros-tres {
+    background-color: var(--fondoUno);
+    padding: 50px;
+    padding-bottom: 350px;
+
+}
+
+
+.seccion-libros-dos h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.libros-dos-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+
+.busca-libros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    
+    .busca-libros-card {
+        width: 195px;
+        height: 389px;
+        background-color: var(--fondoDos);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+        .busca-libros-image {
+            width: 145px;
+            height: 218px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .busca-libros-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        *{
+            .busca-libros-text{
+                h2{
+                    
+                    color: var(--textoDos);
+                }
+                p{
+                    color: var(--textoDos);
+                }
+        
+            }
+        }
+        .busca-libros-text h2 {
+            margin-bottom: 10px;
+            text-align:center;
+            color: var(--textoDos);
+        }
+        
+        .busca-libros-text p {
+            line-height: 1.4;
+            text-align: center;
+            color: var(--textoDos);
+        }
+
+
+
+
+    }
+
+
+}
+
+
+
+/*Tarjetas sección 2 Teatro y poesía*/
+.libro-dos-card {
+    width: 195px;
+    height: 389px;
+    background-color: var(--fondoUno);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}
+
+
+.libro-dos-card-destacado {
+    width: 195px;
+    height: 389px;
+    background-color: var(--elementosDestacados);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+/*ANIMACIONES TARJETAS LIBRO DOS TEATRO Y POESÍA*/
+.libro-dos-card, .libro-dos-card-destacado {
+    transition: transform 0.3s, background-color 0.3s;
+    
+}
+
+.libro-dos-card:hover,
+.libro-dos-card:focus {
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+  background-color: var(--animacion); /* Cambiar ligeramente el color de fondo */
+  cursor: pointer; /* Cambiar el cursor a una mano */
+}
+/*ANIMACIONES LIBRO DOS DESTACADO*/
+.libro-dos-card-destacado:hover,
+.libro-dos-card-destacado:focus {
+    transform: scale(1.05);
+    background-color: #89ce0a;
+    cursor: pointer; 
+}
+
+
+/*ANIMACIONES LIBRO DOS CARD OBSERVABLE API*/
+.libro-dos-card-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.libro-dos-card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Para tarjetas destacadas */
+.libro-dos-card-destacado-hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.libro-dos-card-destacado-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+/* Estilo para el segundo div con clase libro-dos-card */ 
+/*.libro-dos-card:nth-child(2) { 
+    background-color: var(--elementosDestacados); }
+*/
+
+/*Tarjetas sección 3 Novela y Ficción*/
+.libro-tres-card {
+    width: 195px;
+    height: 389px;
+    background-color: var(--fondoDos);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.libro-tres-card-destacado {
+    width: 195px;
+    height: 389px;
+    background-color: var(--elementosDestacados);     
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ANIMACIONES TARJETAS LIBRO DOS TEATRO Y POESÍA*/
+.libro-tres-card, .libro-tres-card-destacado {
+    transition: transform 0.3s, background-color 0.3s;
+    
+}
+
+.libro-tres-card:hover,
+.libro-tres-card:focus {
+  transform: scale(1.05);       /* Aumenta ligeramente el tamaño */
+  background-color:var(--animacion); /* Cambiar ligeramente el color de fondo */
+  cursor: pointer;              /* Cambiar el cursor a una mano */
+}
+/*ANIMACIONES LIBRO DOS DESTACADO*/
+.libro-tres-card-destacado:hover,
+.libro-tres-card-destacado:focus {
+    transform: scale(1.05);
+    background-color: #89ce0a;
+    cursor: pointer; 
+}
+
+
+/*ANIMACIONES PARA SECCION NOVELA Y FICCION OBSERVABLE API*/
+.libro-tres-card-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.libro-tres-card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Para tarjetas destacadas */
+.libro-tres-card-destacado-hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.libro-tres-card-destacado-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Estilo para el segundo div con clase libro-dos-card */ 
+/*.libro-tres-card:nth-child(2) { 
+    background-color: var(--elementosDestacados); 
+}    
+*/
+
+.libro-dos-image {
+    width: 145px;
+    height: 218px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.libro-dos-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+*{
+    .libro-dos-text{
+        h2{
+            color: var(--textoDos);
+        }
+        p{
+            color: var(--textoDos);
+        }
+
+    }
+}
+.libro-dos-text h2 {
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.libro-dos-text p {
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+
+.novela-ficcion-titulo{
+    margin-bottom: 40px;
+}
+
+
+/*PREVISUALIZACION*/
+    /* Contenedor relativo para ubicar el preview */
+    .item4 {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Estilos para el cuadro emergente (preview) */
+    #cart-preview {
+      display: none; /* oculto por defecto */
+      position: absolute;
+      top: 110%;  /* se posiciona justo debajo del botón */
+      right: 0;
+      width: 300px;
+      border: 1px solid #ccc;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+      padding: 10px;
+    }
+
+    #cart-preview ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+    }
+
+    #cart-preview li {
+      margin-bottom: 5px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    #cart-preview li:last-child {
+      border-bottom: none;
+    }
+
+
+
+
+
+
+
+*{
+    .footer{
+        p{
+            color: var(texto)
+        }
+    }
+
+}
+
+
+
+
+.footer {
+    width: 100%;
+    margin-top: 200px;;
+    height: 297px;
+    background-color: var(--fondoFooter);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-left h2, .footer-right h2 {
+    color: var(--elementosDestacados);
+    text-align: center;
+}
+
+.footer-left p, .footer-right p, .footer-bottom {
+    color: var(--parrafoFooter);
+    text-align: center;
+    line-height: 1.5;
+    img {
+        width: 24px; /* Ajusta el tamaño de los iconos si es necesario */
+        height: 24px;
+        margin: 0 5px; /* Espacio entre los iconos */
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.icono {
+    margin-right: 10px;
+}
+
+
+
+/*SALTAR BARRA*/
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+
+
+
+/*SCROLL DEL FOOTER*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+*{
+    .fichaLibro{
+        p{
+            font-family: 'Alegreya';
+            color: var(--textoUno);
+            font-size: 2vw;
+            
+        }
+
+        h1{
+            font-family: 'Alegreya';
+            font-size: 36px; 
+            color: var(--textoDos);
+            
+        }
+
+        h2{
+            font-family: 'Alegreya' Serif;
+            font-size: 1em;
+            font-weight: bold; 
+            color: var(--textoDos);
+
+        }
+        color: var(--textoDos);
+        .caja-descripcion{font-size: 3vw;}
+        .grid-container-descripcion-libro{font-size: 2vw;}
+        .btn-compra{font-size:2vw;}
+    }
+        
+        
+}
+
+*{
+    .libros-dos-container{
+        
+        p{
+            font-family: 'Alegreya';
+            font-size: 1em;
+            
+        }
+
+        h1{
+            font-family: 'Alegreya';
+            font-size: 2.5em;
+            color: var(--textoDos)
+        }
+
+        h2{
+            font-family: 'Alegreya';
+            font-size: 1.5em;
+            color: var(--textoDos);
+
+        }
+
+    }
+        
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+section{
+    
+
+
+.item1 { grid-area: imagen;
+    padding: 10px;
+}
+.item2 { grid-area: resena; 
+    padding: 10px;
+}
+.item3 { grid-area: descripcion; 
+    padding: 10px;
+}
+
+
+
+.grid-container-seccion-libro {
+  display: grid;
+  grid-template-areas:
+    'imagen resena'
+    'imagen descripcion'
+    'sinopsis sinopsis'
+    'libros-relacionados libros-relacionados';
+  gap: 1px;
+  background-color: var(--fondoUno);
+  padding: 40px;
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.item4 { grid-area: sinopsis; 
+    padding: 10px;
+
+}
+
+.grid-container-sinopsis-preguntas{
+display: grid;
+  grid-template-areas:
+    'sinopsis sinopsis'
+    'libros-relacionados libros-relacionados';
+  gap: 1px;
+  background-color: var(--fondoUno);
+  padding: 20px;
+  padding-bottom: 350px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+.item5 { grid-area: libros-relacionados;
+    padding: 10px;
+    margin-top: 10%;
+}
+.grid-container-sinopsis-preguntas{
+display: grid;
+  grid-template-areas:
+    'sinopsis sinopsis'
+    'libros-relacionados libros-relacionados';
+  gap: 1px;
+  background-color: var(--fondoUno);
+  padding: 20px;
+  padding-bottom: 350px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+.tab-content {
+    transition: all 0.5s ease-in-out; /* Suaviza el cambio de tamaño */
+    min-height: 150px; /* Altura mínima para evitar cambios bruscos */
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.tab-pane {
+    transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+.mt-3{
+    padding-bottom: 80px;
+}
+
+
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 378px;
+    max-width: 100%;
+    height: 548.8px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+img { 
+    max-width: 441px; 
+    max-height: 648px; 
+    width: auto; 
+    height: auto; 
+}
+
+
+
+.titulo { 
+    text-align: left;
+} 
+.autor { 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
+    text-align: left;
+} 
+.caja-titulo { 
+    font-size: 36px; 
+    margin-bottom: 10px;
+
+} 
+.caja-autor { 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    
+} 
+.caja-valoraciones { 
+    font-family: 'Alegreya', serif; 
+    font-size: 30px;
+    text-align: left; 
+}
+
+.caja-estrellas{
+    text-align: left;
+    
+    
+    
+    
+    
+}
+
+/* Estilos para la caja de compra */
+.caja-compra {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .precio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-right: 15px;
+    color: var(--textoDos);
+  }
+  
+  .cantidad {
+    width: 60px;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  
+  .btn-compra {
+    background-color: var(--elementosDestacados);
+    color: var(--fondoUno);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--textoDos);
+  }
+
+
+
+
+
+  .caja-descripcion{
+    text-align: left;
+    font-family: 'Alegreya';
+    font-weight: bold; 
+    
+  }
+
+
+  .nom1 { grid-area: editorial; }
+  .nom2 { grid-area: anio-de-edicion; }
+  .nom3 { grid-area: paginas; }
+  .nom4 { grid-area: formato; }
+  .nom5 { grid-area: isbn; }
+  .nom6 { grid-area: r-editorial; }
+  .nom7 { grid-area: r-anio-de-edicion; }
+  .nom8 { grid-area: r-paginas; }
+  .nom9 { grid-area: r-formato; }
+  .nom10 { grid-area: r-isbn; }
+  
+  .grid-container-descripcion-libro {
+    display: grid;
+    grid-template-areas:
+      'editorial r-editorial'
+      'anio-de-edicion r-anio-de-edicion'
+      'paginas r-paginas'
+      'formato r-formato'
+      'isbn r-isbn';
+    gap: 1px;
+    background-color: var(--fondoUno);
+    padding: 10px;
+  }
+
+
+
+  .item4, .item5 {
+    max-width: 100%; /* Se asegura de que ocupen el ancho total disponible */
+    width: 90%; /* Ajusta el ancho en relación al contenedor */
+    margin: auto; /* Centra los elementos */
+    padding: 20px; /* Añade espacio interno */
+    
+}
+
+
+
+
+.item5{
+    margin-top: 8%;
+}
+
+
+
+  
+
+  
+
+  .grid-container-descripcion-libro {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .sinopsis-titulo {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-bottom: 10px;
+    color: var(--textoDos);
+  }
+  
+  .sinopsis-parrafo {
+    text-align: left;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+
+
+.nav-tabs .nav-link {
+    font-size: 1rem; /* Tamaño reducido */
+    font-weight: bold; /* Mantener legibilidad */
+    
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-tabs .nav-link {
+        font-size: 0.75rem;
+    }
+}
+
+
+
+
+.parrafo-accordion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Tamaño base */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: var(--textoUno); /* Color de texto para mejor legibilidad */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .parrafo-accordion {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .parrafo-accordion {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+}
+
+
+
+ 
+
+
+/*PAGINA INFORMACION*/
+.informacion-libreria {
+    padding: 40px 20px;
+    background-color: var(--fondoUno);
+    color: var(--textoUno);
+    text-align: center;
+
+    .titulo h1 {
+        font-family: "Alegreya";
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 5%;
+        color: var(--textoDos);
+    }
+
+    .visita-tienda h2 {
+        font-family: "Alegreya";
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--textoDos);
+        margin-top: 30px;
+    }
+
+
+    .conoce-equipo h2{
+        font-family: "Alegreya";
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--textoDos);
+        margin-top: 30px;
+
+    }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;  /* Puedes ajustar este valor */
+    max-height: 600px;
+    margin: 30px auto;
+    aspect-ratio: 16 / 9;  /* Mantiene la proporción widescreen */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+
+.conoce-equipo{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.visita-tienda{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.contenido p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 500px;
+    flex: 1;
+    padding: 10px;
+}
+
+.contenido picture {
+    flex: 1;
+    max-width: 500px;
+}
+
+.informacion-libreria img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.informacion-libreria img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenido p {
+        text-align: center;
+    }
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/*BOTON BASURA*/
+
+.btn-eliminar {
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.btn-eliminar {
+    background-color: red;
+}
+
+  
+
+
+
+
+
+
+
+/* Media query para pantallas de 700px o menos */
+@media (max-width: 780px) {
+  .grid-container-seccion-libro {
+    grid-template-areas:
+      'imagen'
+      'resena'
+      'descripcion'
+      'sinopsis';
+      
+  
+    }
+
+}
+
+
+
+/* Hide extra book cards for smaller screens */
+@media (max-width: 1220px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'logo logo barra barra barra barra barra barra barra barra idioma compra'
+          'logo logo inicio inicio libros libros contacto contacto flibro flibro redes redes';
+        gap: 1px;
+        background-color: var(--fondoDos);
+        
+        
+      }
+    
+
+
+    .featured-books .book-card:nth-child(n+4) {
+        display: none;
+    }
+
+
+    
+    
+}
+
+
+
+@media (max-width: 780px) {
+    *{
+        .fichaLibro{
+            
+    
+            h1{
+                font-family: 'Alegreya';
+                font-size: 30px; 
+                color: var(--textoDos);
+                text-align: center;
+            }
+
+            h2{text-align: center;
+                font-size: 30px; 
+            }
+            
+            .caja-estrellas{
+                text-align: center;
+                
+            }
+
+            /* Estilos para la caja de compra */
+            .caja-compra {
+                display: flex;
+                flex-direction: column; /* Hace que los elementos se coloquen en una columna */
+                align-items: center;
+                margin: 10px;
+
+            }
+            
+            .precio {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 28px;
+                margin-bottom: 10px; /* Añade margen inferior para separar los elementos */
+                color: var(--textoDos);
+            }
+            
+            .cantidad {
+                width: 60px;
+                padding: 5px;
+                margin-bottom: 10px; /* Añade margen inferior para separar los elementos */
+            }
+            
+            .btn-compra {
+                background-color: var(--elementosDestacados);
+                color: var(--fondoUno);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                color: var(--textoDos);
+            }
+            
+            .caja-descripcion{font-size: 20px;}
+            .grid-container-descripcion-libro{font-size: 4vw;}
+            .sinopsis-titulo{font-size: 19px;}
+
+        }
+    }
+
+
+
+
+
+}
+
+
+

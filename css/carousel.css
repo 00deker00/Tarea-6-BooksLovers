@@ -1,0 +1,43 @@
+        /* Personalización del carrusel */
+        .carousel-example {
+            max-width: 800px; /* Ajusta el ancho máximo del carrusel */
+            margin: 20px auto; /* Centrado y espaciado superior */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden; /* Esconde desbordes del contenido */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+            background-color: #f8f9fa; /* Color de fondo agradable */
+        }
+
+        .carousel-item {
+            background: linear-gradient(135deg, #e9ecef, #dee2e6); /* Fondo con degradado */
+            padding: 20px; /* Espaciado interno */
+        }
+
+        .carousel-item img {
+            max-height: 300px; /* Limita la altura de la imagen */
+            max-width: 100%; /* Asegura que la imagen no desborde */
+            object-fit: contain; /* Asegura que la imagen se vea completa */
+            border-radius: 5px; /* Bordes suaves para la imagen */
+        }
+
+        .text-column {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .text-column h3 {
+            font-size: 1.5rem;
+            color: #343a40; /* Color del título */
+            margin-bottom: 10px;
+        }
+
+        .text-column p {
+            font-size: 1rem;
+            color: #495057; /* Color de la descripción */
+        }
+
+        /* Botones de navegación */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(50%); /* Cambia el color de los iconos */
+        }

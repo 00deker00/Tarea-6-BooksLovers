@@ -1,0 +1,22 @@
+.boton-subir {
+    position: fixed; /* Fija el botón en la misma posición */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    background-color: var(--elementosDestacados); /* Color del botón */
+    color: var(--parrafoFooter); /* Color del texto o ícono */
+    border: none;
+    border-radius: 50%; /* Botón circular */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 24px; /* Tamaño del ícono */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.boton-subir:hover {
+    background-color: var(--destacar); /* Cambia color al pasar el ratón */
+}
